@@ -1,0 +1,124 @@
+nav{
+    display: flex;
+    background-color:white
+}
+body {
+    background-color: bisque;
+}
+ .container{
+    margin-top: 100px;
+ }
+ .btn:hover{
+    background-color: antiquewhite;
+ }
+
+
+
+ .boxy img {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .cover {
+    display: flex;
+  
+    flex-wrap: wrap;
+    margin-top: 90px;
+    margin-right: 90px;
+    justify-content: center;
+  }
+  .boxy {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background-color: bisque;
+    box-shadow: -1px 0 10px #040404;
+    text-align: center;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+  .boxy:hover {
+    width: 302px;
+    height: 480px;
+    box-shadow: -1px 0 20px white;
+ 
+  }
+  
+  .boxy p {
+    margin-top: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: -100%;
+    transition-duration: 0.3s;
+    color: #0b090c;
+  }
+  .boxy:hover p {
+    display: block;
+    transition-delay: 0.4s;
+    bottom: 5%;
+  }
+  .boxy h2 {
+    text-align: center;
+    margin-top: 10px;
+    color: #050505;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    /* Adjust the layout for mobile devices */
+   .cover {
+      flex-direction: column;
+      margin-top: 30px;
+      margin-right: 0;
+    }
+    
+   .boxy {
+      width: 90%;
+      height: auto;
+      margin: 20px auto;
+    }
+    
+   .boxy img {
+      width: 100%;
+      height: 150px;
+    }
+    
+   .boxy p {
+      position: relative;
+      bottom: 0;
+      margin-top: 10px;
+    }
+    
+   .boxy:hover {
+      width: 90%;
+      height: auto;
+    }
+    
+   .boxy:hover p {
+      bottom: 0;
+    }
+  }
+  
+  /* Tablet devices (max-width: 1024px) */
+  @media only screen and (max-width: 1024px) {
+    /* Adjust the layout for tablet devices */
+   .cover {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      margin-right: 30px;
+    }
+    
+   .boxy {
+      width: 55%;
+      height:200px;
+      margin: 20px;
+    }
+    
+   .boxy img {
+      width: 100%;
+      height: 150px;
+    }
+  }
